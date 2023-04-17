@@ -123,6 +123,10 @@ class MainActivity : ComponentActivity() {
                 ) else latLongResult
             }
 
+            // esta funcion "getFromLocationName" recibe un parametro mas a partir de la version de android "tiramisu"
+            // por eso el if Build.VERSION.SDK_INT >= Build.VERSION_CODES.TIRAMISU
+                    // si lo abris desde un android nuevo, usa la funcion con 3 parametros,
+                    // sino, con 2
             geocoder.getFromLocationName(address, 1, listener)
         }
         else {
@@ -133,6 +137,7 @@ class MainActivity : ComponentActivity() {
         return latLongResult
     }
 
+    // region Permiso de ubicacion
     private fun askPermissions() = when {
         ContextCompat.checkSelfPermission(
             this,
@@ -144,7 +149,7 @@ class MainActivity : ComponentActivity() {
             requestPermissionLauncher.launch(ACCESS_FINE_LOCATION)
         }
     }
-
+    // si bien el codigo todavia no hace nada con la ubicacion, queda para cuando querramos usarlo
     private val requestPermissionLauncher =
         registerForActivityResult(
             ActivityResultContracts.RequestPermission()
@@ -153,6 +158,7 @@ class MainActivity : ComponentActivity() {
                 viewModel.getDeviceLocation(fusedLocationProviderClient)
             }
         }
+    // endregion
 }
 
 @Preview(showBackground = true)
