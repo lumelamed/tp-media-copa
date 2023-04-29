@@ -1,11 +1,6 @@
-package com.tpmobile.mediacopa.helpers
+package com.tpmobile.mediacopaaux.helpers
 
-import android.location.Geocoder
-import androidx.compose.runtime.Composable
-import androidx.compose.ui.platform.LocalContext
 import com.google.android.gms.maps.model.LatLng
-import kotlinx.coroutines.Dispatchers
-import kotlinx.coroutines.withContext
 
 class MapsFunctions {
 

@@ -1,4 +1,4 @@
-package com.tpmobile.mediacopa
+package com.tpmobile.mediacopaaux
 
 import android.annotation.SuppressLint
 import androidx.compose.runtime.MutableState

@@ -1,4 +1,4 @@
-package com.tpmobile.mediacopa.ui.theme
+package com.tpmobile.mediacopaaux.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

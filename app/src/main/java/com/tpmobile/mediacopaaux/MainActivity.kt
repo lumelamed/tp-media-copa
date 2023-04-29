@@ -1,4 +1,4 @@
-package com.tpmobile.mediacopa
+package com.tpmobile.mediacopaaux
 
 import android.Manifest.permission.ACCESS_FINE_LOCATION
 import android.content.Context
@@ -25,8 +25,8 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.gms.maps.model.LatLng
 import com.google.maps.android.compose.GoogleMap
-import com.tpmobile.mediacopa.helpers.MapsFunctions.Companion.findMidpoint
-import com.tpmobile.mediacopa.ui.theme.MediaCopaTheme
+import com.tpmobile.mediacopaaux.helpers.MapsFunctions.Companion.findMidpoint
+import com.tpmobile.mediacopaaux.ui.theme.MediaCopaTheme
 
 class MainActivity : ComponentActivity() {
 
@@ -161,7 +161,7 @@ class MainActivity : ComponentActivity() {
     // endregion
 }
 
-@Preview(showBackground = true)
+//@Preview(showBackground = true)
 @Composable
 fun MyGoogleMaps() {
     GoogleMap(modifier = Modifier.fillMaxSize())
